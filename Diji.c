@@ -43,3 +43,24 @@ void print_path(int src, int dest){
 	}
 	printf("%d = %d",i,d[dest]);
 }
+void main(){
+	int i,j,src;
+	printf("Enter the number of vertices:\t");
+	scanf("%d",&n);
+	printf("Enter the cost adjacency matrix\n");
+	for(i=0;i<n;i++)
+		for(j=0;j<n;j++)
+			scanf("%d",&cost[i][j]);
+	printf("Enter the source vertex:\t");
+	scanf("%d",&src);
+	dijikstra(src);
+	printf("The shortest path and distance:\n");
+	for(i=0;i<n;i++){
+		if(d[i]!=99)
+			print_path(src,i);
+		else
+			printf("Not reachable from %d to %d",src,i);
+		printf("\n");
+	}
+	}
+
