@@ -24,7 +24,7 @@ printf("enter adjacency matrix value");
 for(i=0;i<n;i++)
 for(j=0;j<n;j++)
 scanf("%d",&a[i][j]);
-printf("\n");
+printf("\n enter adjacency matrix value \n");
 for(i=0;i<n;i++)
 {
 for(j=0;j<n;j++)
